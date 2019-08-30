@@ -24,6 +24,12 @@ li a, a:visited, a:active {
   }
 }
 
+#more-info {
+  color: $color-text-footer;
+}
+
+
+
 @media only screen and (max-width: 1000px) {
   .social, #prime-nav{
     display: none;

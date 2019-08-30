@@ -16,6 +16,13 @@ body {
   color: $color-text;
 }
 
+header {
+  background-color: $color-white;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
+}
+
 img {
   width: 100%;
 }
@@ -42,10 +49,6 @@ footer {
 
   li {
     list-style: none;
-  }
-
-  a {
-    color: $color-text-footer;
   }
 }
 
