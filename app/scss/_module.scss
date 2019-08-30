@@ -1,0 +1,39 @@
+$color-btn-hover: #1e967f;
+$color-bg-input: #4e5c6c;
+
+.btn {
+  background-color: $color-light-green;
+  border: none;
+  border-radius: 3px;
+  color: $color-light;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.btn-start {
+  padding: 17px 30px;
+}
+
+.btn-touch {
+  font-size: 0.75rem;
+  padding: 15px 25px;
+}
+
+.btn-subscribe {
+  font-size: 0.75rem;
+  padding: 7px 10px;
+}
+
+.nest {
+  background-color: $color-bg-input;
+  padding: 5px 0 5px 5px;
+  border-radius: 3px;
+
+  .newletters {
+    border: none;
+    background-color: transparent;
+    padding-right: 5px;
+    color: $color-text-footer;
+  }
+}

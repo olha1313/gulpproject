@@ -1,0 +1,51 @@
+.container{
+  margin: auto;
+}
+
+.social {
+  border-bottom: 1px solid #e6e9ed;
+  font-size: 0.75rem;
+  height: 40px;
+
+  li {
+    list-style: none;
+    display: inline;
+    padding-right: 10px;
+  }
+}
+
+header {
+  padding: 30px 0;
+
+  li{
+    list-style: none;
+    display: inline;
+    margin-left: 30px;
+    font-size: 0.875rem;
+    font-weight: bold;
+  }
+}
+
+.icon-benefit {
+  font-size: 4rem;
+  color: $color-light-green;
+}
+
+.benefit {
+  line-height: 1.8rem;
+  padding: 50px;
+}
+
+.image-text {
+  background-color: $color-white;
+  padding: 10px 0;
+  margin-bottom: 50px;
+}
+
+.offer {
+  padding: 60px;
+}
+
+.logo-white {
+  font-size: .2rem;
+}

@@ -1,0 +1,63 @@
+$bg-color: #fbfcfd;
+$color-text: #536a7f;
+$color-light: #f5f7fa;
+$color-footer: #2f4052;
+$color-sub-footer: #283645;
+$color-light-green: #1abb9c;
+$color-white: #ffffff;
+$color-text-footer: #a3b1bf;
+
+
+
+body {
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
+  background-color: $bg-color;
+  color: $color-text;
+}
+
+img {
+  width: 100%;
+}
+
+.lst-works {
+  background-color: $color-light;
+  padding: 30px;
+}
+
+.social {
+  background-color: $color-light;
+}
+
+footer {
+  font-size: 0.875rem;
+  line-height: 1.375rem;
+  background-color: $color-footer;
+  color: $color-text-footer;
+  padding: 60px;
+
+  h4 {
+    color: $color-white;
+  }
+
+  li {
+    list-style: none;
+  }
+
+  a {
+    color: $color-text-footer;
+  }
+}
+
+.sub-footer {
+  background-color: $color-sub-footer;
+  padding: 15px;
+  font-size: 0.875rem;
+
+  li {
+    list-style: none;
+    display: inline;
+    margin-left: 20px;
+  }
+}
+

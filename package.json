@@ -1,15 +1,21 @@
 {
   "name": "gulpproject",
   "version": "1.0.0",
-  "description": "",
+  "description": "My first project",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "start http://localhost & serve app -l 80"
   },
-  "author": "",
+  "author": "olha1313",
   "license": "ISC",
   "devDependencies": {
+    "autoprefixer": "^9.6.1",
+    "browser-sync": "^2.26.7",
     "gulp": "^4.0.2",
-    "gulp-sass": "^4.0.2"
-  }
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2",
+    "gulp-sourcemaps": "^2.6.5"
+  },
+  "dependencies": {}
 }
