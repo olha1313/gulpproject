@@ -21,20 +21,30 @@ $color-bg-input: #4e5c6c;
 }
 
 .btn-subscribe {
-  font-size: 0.75rem;
+  font-size: 0.730rem;
+  font-style: inherit;
+  font-weight: 700;
   padding: 7px 10px;
+  position: absolute;
+  top: 4px;
+  right: 3px;
 }
 
 .nest {
   background-color: $color-bg-input;
-  padding: 5px 0 5px 5px;
+  padding: 7px 0 7px 5px;
   border-radius: 3px;
+  position: relative;
 
-  .newletters {
+  input {
+    padding: 0;
+    height: 18px;
+  }
+
+  .new-letters {
     border: none;
     outline: none;
     background-color: transparent;
-    padding-right: 5px;
     color: $color-text-footer;
   }
 }

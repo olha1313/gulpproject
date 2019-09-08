@@ -6,35 +6,53 @@
 .social {
   border-bottom: 1px solid #e6e9ed;
   font-size: 0.75rem;
+  display: flex;
   height: 40px;
+  align-items: center;
 
   li {
     list-style: none;
     display: inline;
-    padding-right: 10px;
+    padding: 5px;
+
+    a {
+      position: relative;
+
+      ::after {
+        content: '';
+        z-index: -1;
+        position: absolute;
+        height: 0;
+        top: 0;
+        left: 0;
+        transition: all .2s ease-in-out;
+      }
+    }
+  }
+
+  a .icon-facebook::after {
+    background-color: #4668b3;
   }
 }
 
 header {
   padding: 30px 0;
-
-  li{
-    list-style: none;
-    display: inline;
-    margin-left: 30px;
-    font-size: 0.875rem;
-    font-weight: bold;
-  }
 }
 
-.icon-benefit {
-  font-size: 4rem;
-  color: $color-light-green;
+#blue-logo, #white-logo {
+  height: 40px;
+  width: 162px;
 }
+
 
 .benefit {
   line-height: 1.8rem;
   padding: 50px;
+
+  .icon-benefit {
+    font-size: 4rem;
+    color: $color-light-green;
+  }
 }
 
 .image-text {
@@ -47,6 +65,69 @@ header {
   padding: 60px;
 }
 
-.logo-white {
-  font-size: .2rem;
+#more-info:hover {
+  .icon-right-small {
+    padding-left: 8px;
+  }
 }
+
+.get-in-touch {
+  i {
+    margin-right: 5px;
+  }
+}
+
+@mixin slider-text($left) {
+  color: $color-white;
+  position: relative;
+  top: -500px;
+  left: $left;
+}
+
+.slider-text-center {
+  @include slider-text(0)
+}
+
+.slider-text-left {
+  @include slider-text(50px)
+}
+
+.slider-text-right {
+  @include slider-text(-50px)
+}
+
+
+//header {
+//  padding: 30px 0;
+//
+//  li{
+//    list-style: none;
+//    font-size: 0.875rem;
+//    font-weight: bold;
+//  }
+//}
+
+
+
+#main-nav {
+  text-transform: uppercase;
+  font-size: 0.875rem;
+  font-weight: bold;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+
+  .main-nav-link {
+    padding: 15px 20px;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  ul {
+    list-style: none;
+  }
+}
+

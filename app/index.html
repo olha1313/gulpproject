@@ -20,7 +20,7 @@
   <div class="social">
     <div class="container">
       <div class="row middle-md middle-lg">
-        <div class="col-md-4 col-lg-4">
+        <div class="col-md-4 col-lg-4 start-md start-lg">
           <ul>
             <li><a href="#"><i class="icon-mail-1"></i>info@reen.com</a></li>
             <li><i class="icon-mobile"></i>+0 (123) 456 789</li>
@@ -43,24 +43,98 @@
   <header>
     <div class="container">
       <div class="row middle-xs middle-sm middle-md middle-lg">
-        <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2">
-          <a href="index.html" class="logo" id="blue-logo"><img src="./img/logo.svg" alt=""></a>
+        <div class="col-xs-6 col-sm-6 col-md-3 col-lg-3">
+          <a href="index.html" class="logo"><img src="./img/logo.svg" alt="" id="blue-logo"></a>
         </div>
         <div class="col-md-8 col-lg-8 center-xs center-sm center-md center-lg">
-          <nav id="prime-nav">
-            <ul>
-              <li><a href="#">HOME</a></li>
-              <li><a href="#">PORTFOLIO</a></li>
-              <li><a href="#">BLOG</a></li>
-              <li><a href="#">PAGES</a></li>
-              <li><a href="#">FEATURES</a></li>
-              <li><a href="#">MEGA MENU</a></li>
-              <li><a href="#">CONTACT</a></li>
+          <nav>
+            <ul id="main-nav">
+              <li>
+                <a href="#" class="main-nav-link nav-home">home</a>
+<!--                <ul class="main-nav main-nav-home">-->
+<!--                  <li><a href="#">product style</a></li>-->
+<!--                  <li><a href="#">service style</a></li>-->
+<!--                  <li><a href="#">agency style</a></li>-->
+<!--                  <li><a href="#">portfolio style</a></li>-->
+<!--                  <li><a href="#">showcase style</a></li>-->
+<!--                </ul>-->
+              </li>
+              <li class="nav-portfolio">
+                <a href="#" class="main-nav-link">portfolio</a>
+<!--                <ul class="main-nav">-->
+<!--                  <li><a href="#">3 columns grid</a></li>-->
+<!--                  <li><a href="#">3 columns details grid</a></li>-->
+<!--                  <li><a href="#">4 columns grid</a></li>-->
+<!--                  <li><a href="#">4 columns details grid</a></li>-->
+<!--                  <li><a href="#">fullscreen grid</a></li>-->
+<!--                  <li><a href="#">post with slider I</a></li>-->
+<!--                  <li><a href="#">post with slider II</a></li>-->
+<!--                  <li><a href="#">post with images I</a></li>-->
+<!--                  <li><a href="#">post with images II</a></li>-->
+<!--                  <li><a href="#">post with video</a></li>-->
+<!--                  <li><a href="#">post with audio</a></li>-->
+<!--                </ul>-->
+              </li>
+              <li class="nav-blog">
+                <a href="#" class="main-nav-link">blog</a>
+<!--                <ul class="main-nav">-->
+<!--                  <li><a href="#">sidebar right</a></li>-->
+<!--                  <li><a href="#">sidebar left</a></li>-->
+<!--                  <li><a href="#">without sidebar</a></li>-->
+<!--                  <li><a href="#">2 columns grid sidebar right</a></li>-->
+<!--                  <li><a href="#">2 columns grid sidebar left</a></li>-->
+<!--                  <li><a href="#">3 columns grid without sidebar</a></li>-->
+<!--                  <li><a href="#">post sidebar right</a></li>-->
+<!--                  <li><a href="#">post sidebar left</a></li>-->
+<!--                  <li><a href="#">post without sidebar</a></li>-->
+<!--                </ul>-->
+              </li>
+              <li class="nav-pages">
+                <a href="#" class="main-nav-link">pages</a>
+<!--                <ul class="main-nav">-->
+<!--                  <li><a href="#">one page</a></li>-->
+<!--                  <li><a href="#">about I</a></li>-->
+<!--                  <li><a href="#">about II</a></li>-->
+<!--                  <li><a href="#">services I</a></li>-->
+<!--                  <li><a href="#">services III</a></li>-->
+<!--                  <li><a href="#">pricing I</a></li>-->
+<!--                  <li><a href="#">pricing II</a></li>-->
+<!--                  <li><a href="#">side navigation</a></li>-->
+<!--                </ul>-->
+              </li>
+              <li class="nav-features">
+                <a href="#" class="main-nav-link">features</a>
+<!--                <ul class="main-nav">-->
+<!--                  <li><a href="#">slider/carousel</a></li>-->
+<!--                  <li><a href="#">modal</a></li>-->
+<!--                  <li><a href="#">tab</a></li>-->
+<!--                  <li><a href="#">according</a></li>-->
+<!--                  <li><a href="#">isotope</a></li>-->
+<!--                  <li><a href="#">styles</a></li>-->
+<!--                  <li><a href="#">fot icons</a></li>-->
+<!--                  <li><a href="#">backgrounds</a></li>-->
+<!--                  <li><a href="#">colors</a></li>-->
+<!--                  <li><a href="#">submenu levels</a></li>-->
+<!--                </ul>-->
+              </li>
+              <li class="nav-mega-menu">
+                <a href="#" class="main-nav-link">MEGA MENU</a>
+              </li>
+              <li class="nav-contact">
+                <a href="#" class="main-nav-link">contact</a>
+<!--                <ul class="main-nav">-->
+<!--                  <li><a href="#">contact I</a></li>-->
+<!--                  <li><a href="#">contact II</a></li>-->
+<!--                  <li><a href="#">contact III</a></li>-->
+<!--                </ul>-->
+              </li>
             </ul>
           </nav>
         </div>
-        <div class="col-xs-6 col-sm-6 col-md-2 col-lg-2 end-md end-lg">
+        <div class="col-xs-6 col-sm-6 col-md-1 col-lg-1 end-md end-lg">
           <a href="#"><i class="icon-search"></i></a>
+<!--          <input type="text" name="search" placeholder="Type to search">-->
+<!--          <button class="btn btn-search">&gt</button>-->
         </div>
       </div>
     </div>
@@ -73,7 +147,7 @@
           <div class="slider">
             <div>
               <img src="./img/slide1.jpg" alt="Slide1">
-              <div class="slider-text">
+              <div class="slider-text-center col-lg-8 col-md-8 col-lg-offset-2">
                 <h1><strong>MADE FOR DESIGNERS</strong></h1>
                 <p>Create your online portfolio in minutes with the professionally and lovingly designed RENN
                   website template. Customize your site with versatile and easy to use features.</p>
@@ -82,7 +156,7 @@
             </div>
             <div>
               <img src="./img/slide2.jpg" alt="Slide2">
-              <div class="slider-text">
+              <div class="slider-text-right">
                 <h1><strong>Fresh and beautiful design</strong></h1>
                 <p>REEN is designed to showcase your talent and put your work in the forefront.
                 Proffesionally use of typography and layout that fits your content.</p>
@@ -91,7 +165,7 @@
             </div>
             <div>
               <img src="./img/slide3.jpg" alt="Slide3">
-              <div class="slider-text">
+              <div class="slider-text-left">
                 <h1><strong>Clean and reusable code</strong></h1>
                 <p>The clean code allows you to easily copy code blocks from content modules and past them in different places or layouts.</p>
                 <button class="btn btn-start">Get started now</button>
@@ -99,7 +173,7 @@
             </div>
             <div>
               <img src="./img/slide4.jpg" alt="Slide4">
-              <div class="slider-text">
+              <div class="slider-text-right">
                 <h1><strong>Just focus on your creativity</strong></h1>
                 <p>Take a break from messing around with heavy coding and spend your time brainstorming ideas for your next project.</p>
                 <button class="btn btn-start">Get started now</button>
@@ -107,7 +181,7 @@
             </div>
             <div>
               <img src="./img/slide5.jpg" alt="Slide5">
-              <div class="slider-text">
+              <div class="slider-text-center">
                 <h1><strong>Shoecase your content</strong></h1>
                 <p>With REEN you have the possibility to create websites for various contents quickly and easily. Now it's up to you.</p>
                 <button class="btn btn-start">Get started now</button>
@@ -224,9 +298,9 @@
           <div class="row">
             <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
               <h4>Who we are</h4>
-              <a href="index.html" class="logo logo-white"><img src="./img/logo-white.svg" alt=""></a>
+              <a href="index.html" class="logo"><img src="./img/logo-white.svg" alt="" id="white-logo"></a>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A beatae consequatur ducimus, expedita fugit laudantium.</p>
-              <a href="#" id="more-info">More about us<i class="icon-right-small"></i></a>
+              <a href="#"  id="more-info">More about us<i class="icon-right-small"></i></a>
             </div>
 
             <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
@@ -246,10 +320,10 @@
             <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3">
               <h4>Get in touch</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio ea neque odit repudiandae similique!</p>
-              <ul>
+              <ul class="get-in-touch">
                 <li><i class="icon-location"></i>84 Street, City, State 24813</li>
                 <li><i class="icon-mobile"></i>+0 (123) 456 789</li>
-                <li><i class="icon-mail-1"></i><a href="index.html">info@reen.com</a></li>
+                <li><a href="index.html" id="footer-email"><i class="icon-mail-1"></i>info@reen.com</a></li>
               </ul>
             </div>
 
@@ -257,7 +331,7 @@
               <h4>Free updates</h4>
               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
               <div class="nest">
-                <input type="text" name="email" placeholder="Enter your email address" class="newletters">
+                <input type="text" name="email" placeholder="Enter your email address" class="new-letters">
                 <button class="btn btn-subscribe">Subscribe</button>
               </div>
             </div>
@@ -269,11 +343,11 @@
 
   <section class="sub-footer">
     <div class="container">
-      <div class="row middle-xs middle-sm middle-md middle-lg">
-        <div class="col-xs-12 col-sm-3 col-md-3 col-lg-3">
-          &copy 2019 REEN.All rights reserved.
+      <div class="row middle-xs middle-sm middle-md middle-lg center-xs center-sm">
+        <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 start-md start-lg">
+          &copy 2019 REEN. All rights reserved.
         </div>
-        <div class="col-xs-12 col-sm-9 col-md-9 col-lg-9 end-xs end-sm end-md end-lg">
+        <div class="col-xs-12 col-sm-12 col-md-9 col-lg-9 end-md end-lg">
           <ul>
             <li><a href="#">Home</a></li>
             <li><a href="#">Portfolio</a></li>
@@ -286,6 +360,9 @@
       </div>
     </div>
   </section>
+
+<!--  <input type="text" name="search" placeholder="Type to search">-->
+<!--  <button class="btn btn-search">&gt</button>-->
 
   <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>

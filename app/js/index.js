@@ -1,8 +1,14 @@
 $(document).ready(function(){
   $('.slider').slick({
-    autoplay: true,
     dots: true,
-    arrows: true,
-    zIndex: 1
+    // autoplay: true
+  });
 });
+
+
+const checkHeader = _.throttle(() => {
+  console.log('checkHeader')
 });
+
+
+window.addEventListener('scroll', checkHeader);
