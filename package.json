@@ -17,8 +17,5 @@
     "gulp-sass": "^4.0.2",
     "gulp-sourcemaps": "^2.6.5"
   },
-  "dependencies": {
-    "lodash": "^4.17.15",
-    "underscore": "^1.9.1"
-  }
+  "dependencies": {}
 }

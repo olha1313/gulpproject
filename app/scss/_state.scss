@@ -34,3 +34,12 @@ li a, a:visited, a:active {
     display: none;
   }
 }
+
+
+
+
+.main-nav:hover {
+  .dropdown-menu {
+    display: block;
+  }
+}

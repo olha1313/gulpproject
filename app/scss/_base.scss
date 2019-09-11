@@ -14,14 +14,16 @@ body {
   font-size: 16px;
   background-color: $bg-color;
   color: $color-text;
-  //overflow-x: hidden;
+  overflow-x: hidden;
 }
 
 header {
   background-color: $color-white;
   position: sticky;
   top: 0px;
-  z-index: 2;
+  z-index: 1;
+  padding: 30px 0;
+  transition: all ease-in-out .4s;
 }
 
 ul {

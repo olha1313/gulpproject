@@ -6,9 +6,16 @@ $(document).ready(function(){
 });
 
 
-const checkHeader = _.throttle(() => {
-  console.log('checkHeader')
-});
+window.onscroll = function() {scrollFunction()};
 
-
-window.addEventListener('scroll', checkHeader);
+function scrollFunction() {
+  if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+    document.getElementById("header").style.padding = "10px 0";
+    document.getElementById("blue-logo").style.height = "25px";
+    document.getElementById("blue-logo").style.width = "125px";
+  } else {
+    document.getElementById("header").style.padding = "30px 0";
+    document.getElementById("blue-logo").style.height = "40px";
+    document.getElementById("blue-logo").style.width = "162px";
+  }
+}

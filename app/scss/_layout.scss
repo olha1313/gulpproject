@@ -1,10 +1,12 @@
+$color-border: #e6e9ed;
+
 .container{
   margin: auto;
 }
 
 
 .social {
-  border-bottom: 1px solid #e6e9ed;
+  border-bottom: 1px solid $color-border;
   font-size: 0.75rem;
   display: flex;
   height: 40px;
@@ -35,13 +37,11 @@
   }
 }
 
-header {
-  padding: 30px 0;
-}
 
 #blue-logo, #white-logo {
   height: 40px;
   width: 162px;
+  transition: all ease-in-out .4s;
 }
 
 
@@ -65,11 +65,10 @@ header {
   padding: 60px;
 }
 
-#more-info:hover {
-  .icon-right-small {
-    padding-left: 8px;
+#more-info:hover .icon-right-small {
+  padding-left: 6px;
+  transition: all .2s ease-in-out;
   }
-}
 
 .get-in-touch {
   i {
@@ -96,38 +95,46 @@ header {
   @include slider-text(-50px)
 }
 
-
-//header {
-//  padding: 30px 0;
-//
-//  li{
-//    list-style: none;
-//    font-size: 0.875rem;
-//    font-weight: bold;
-//  }
-//}
-
-
-
-#main-nav {
-  text-transform: uppercase;
+.main-nav {
+  position: relative;
   font-size: 0.875rem;
+  text-transform: uppercase;
   font-weight: bold;
-  list-style: none;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
+  box-sizing: border-box;
+  display: inline-block;
+    :hover {
+      border-color: $color-border;
+      background-color: $color-light;
+    }
 
-  .main-nav-link {
-    padding: 15px 20px;
-  }
+    >a {
+      padding: 15px 20px;
+      border: 1px solid transparent;
+      border-bottom: none;
+      border-radius: 3px 3px 0 0;
+    }
 
-  .main-nav {
-    display: none;
-  }
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 1.95rem;
+      text-align: left;
+      z-index: 1;
+      min-width: 11rem;
+      border: 1px solid $color-border;
+      border-radius: 0 3px 3px 3px;
+      border-top: none;
 
-  ul {
-    list-style: none;
-  }
+        :hover {
+          background-color: $color-light-green;
+          color: $color-white;
+        }
+
+        >a {
+          display: block;
+          padding: 10px 0 10px 20px;
+          border-bottom: 1px solid $color-border;
+          background-color: $color-light;
+        }
+    }
 }
-
