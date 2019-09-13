@@ -36,13 +36,9 @@ $color-bg-input: #4e5c6c;
   border-radius: 3px;
   position: relative;
 
-  input {
-    padding: 0;
-    height: 18px;
-  }
-
   .new-letters {
     border: none;
+    padding: 0;
     outline: none;
     background-color: transparent;
     color: $color-text-footer;

@@ -38,6 +38,12 @@ img {
   background-color: $color-light;
 }
 
+.dropdown-search>a {
+  border: 1px solid transparent;
+  border-bottom: none;
+  padding: 10px;
+}
+
 .lst-works {
   background-color: $color-light;
   padding: 30px;
@@ -45,6 +51,19 @@ img {
 
 #more-info, #footer-email{
   color: $color-text-footer;
+}
+
+.slider-text {
+  h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
 }
 
 footer {
@@ -65,7 +84,7 @@ footer {
 
 .sub-footer {
   background-color: $color-sub-footer;
-  padding: 15px;
+  padding: 20px;
   font-size: 0.875rem;
 
   li {
@@ -74,4 +93,6 @@ footer {
     margin-left: 20px;
   }
 }
+
+
 

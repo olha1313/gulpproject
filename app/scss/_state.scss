@@ -16,6 +16,33 @@ li a, a:visited, a:active {
     transition-duration: .5s;
 }
 
+
+.main-nav:hover {
+  .dropdown-menu {
+    display: block;
+  }
+
+  >a {
+    border-color: $color-border;
+    background-color: $color-light;
+    border-radius: 3px 3px 0 0;
+    border-bottom: none;
+  }
+}
+
+.dropdown-search:hover {
+  .main-menu-search {
+    display: block;
+  }
+
+  >a {
+    border-color: $color-border;
+    background-color: $color-light;
+    border-radius: 3px 3px 0 0;
+    color: $color-light-green;
+  }
+}
+
 .logo {
   opacity: 1;
   transition: opacity .25s ease-in-out;
@@ -23,6 +50,10 @@ li a, a:visited, a:active {
   :hover {
     opacity: 0.6;
   }
+}
+
+.icon-search:hover {
+  color: $color-light-green;
 }
 
 #more-info:hover, #footer-email:hover {
@@ -35,11 +66,3 @@ li a, a:visited, a:active {
   }
 }
 
-
-
-
-.main-nav:hover {
-  .dropdown-menu {
-    display: block;
-  }
-}
