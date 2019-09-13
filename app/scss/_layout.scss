@@ -53,7 +53,7 @@ $color-border: #e6e9ed;
   }
 
   >a {
-    padding: 15px 20px;
+    padding: 15px 15px;
     border: 1px solid transparent;
     border-bottom: none;
     border-radius: 3px 3px 0 0;
@@ -245,4 +245,13 @@ $color-border: #e6e9ed;
 
 .menu-sub-footer li:first-child::before {
   content: none;
+}
+
+.responsive-menu {
+  position: absolute;
+  right: 10px;
+
+  .btn-main-menu {
+    padding: 12px 10px;
+  }
 }

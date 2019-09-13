@@ -60,9 +60,17 @@ li a, a:visited, a:active {
   color: $color-light-green;
 }
 
-@media only screen and (max-width: 1000px) {
-  .social {
+.responsive-menu {
+  display: none;
+}
+
+@media only screen and (max-width: 1035px) {
+  .social, .main-nav, .dropdown-search {
     display: none;
+  }
+
+  .responsive-menu {
+    display: block;
   }
 }
 
