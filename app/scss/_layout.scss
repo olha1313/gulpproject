@@ -45,6 +45,7 @@ $color-border: #e6e9ed;
   font-weight: bold;
   box-sizing: border-box;
   display: inline-block;
+  color: $color-text;
 
   :hover {
     border-color: $color-border;
