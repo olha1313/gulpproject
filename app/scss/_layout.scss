@@ -45,7 +45,7 @@ $color-border: #e6e9ed;
   font-weight: bold;
   box-sizing: border-box;
   display: inline-block;
-  color: $color-text;
+
 
   :hover {
     border-color: $color-border;
@@ -58,6 +58,7 @@ $color-border: #e6e9ed;
     border: 1px solid transparent;
     border-bottom: none;
     border-radius: 3px 3px 0 0;
+    color: $color-text;
   }
 
   .dropdown-menu {
@@ -80,6 +81,7 @@ $color-border: #e6e9ed;
       padding: 10px 0 10px 20px;
       border-bottom: 1px solid $color-border;
       background-color: $color-light;
+      color: $color-text;
     }
   }
 }
