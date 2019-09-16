@@ -74,3 +74,8 @@ li a, a:visited, a:active {
   }
 }
 
+input:-webkit-autofill {
+  -webkit-text-fill-color: $color-text-footer;
+  -webkit-box-shadow: 0 0 0 1000px $color-bg-input inset;
+  transition: background-color .5s ease-in-out;
+}

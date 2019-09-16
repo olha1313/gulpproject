@@ -1,0 +1,165 @@
+@mixin slider-text {
+  h1 {
+    font-size: 4rem;
+    text-transform: uppercase;
+    margin: 0;
+  }
+
+  p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 20px 0;
+  }
+}
+
+@mixin display {
+  display: flex;
+  align-items: center;
+}
+
+.slider {
+  position: relative;
+
+  .m-slider-image-one {
+    @include display;
+    justify-content: center;
+
+    .m-slider-text-one {
+      position: absolute;
+      text-align: center;
+      @include slider-text;
+
+      p {
+        background-color: rgba($color-light, .8);
+      }
+    }
+  }
+
+  .m-slider-image-two {
+    @include display;
+    justify-content: flex-end;
+
+    .m-slider-text-two {
+      position: absolute;
+      text-align: right;
+      @include slider-text;
+
+      p {
+        color: $color-light;
+      }
+    }
+  }
+
+  .m-slider-image-three {
+    @include display;
+    justify-content: flex-start;
+
+    .m-slider-text-three {
+      position: absolute;
+      text-align: left;
+      @include slider-text;
+
+      h1, p {
+        color: $color-light;
+      }
+    }
+  }
+
+  .m-slider-image-four {
+    @include display;
+    justify-content: flex-end;
+
+    .m-slider-text-four {
+      position: absolute;
+      text-align: right;
+      @include slider-text;
+
+      h1, p {
+        color: $color-light;
+      }
+    }
+  }
+
+  .m-slider-image-five {
+    @include display;
+    justify-content: center;
+
+    .m-slider-text-five {
+      position: absolute;
+      text-align: center;
+      @include slider-text;
+
+      span {
+        background-color: rgba($color-light, .8);
+        padding: 0 5px;
+      }
+
+      p {
+        color: $color-light;
+      }
+    }
+  }
+}
+
+
+
+    //.m-slider-text {
+    //  position: absolute;
+    //
+    //  h1 {
+    //    font-size: 4rem;
+    //    text-transform: uppercase;
+    //    margin: 0;
+    //
+    //
+    //    p {
+    //      font-size: 1.5rem;
+    //      font-weight: bold;
+    //    }
+
+
+
+  //  .m-slider-text-one {
+  //    position: absolute;
+  //    p {
+  //      color: $color-light;
+  //    }
+  //  }
+  //
+  //  .m-slider-text-two {
+  //    position: absolute;
+  //    text-align: right;
+  //    color: $color-light;
+  //  }
+  //
+  //  .m-slider-text-three {
+  //    position: absolute;
+  //    text-align: left;
+  //
+  //    span {
+  //      background-color: rgba($color-light, .8);
+  //    }
+  //
+  //    p {
+  //      color: $color-light;
+  //    }
+  //  }
+  //
+  //  .m-slider-text-four {
+  //    position: absolute;
+  //    text-align: right;
+  //    color: $color-light;
+  //
+  //    span {
+  //      background-color: rgba($color-text, .8);
+  //      padding: 0 5px;
+  //    }
+  //  }
+  //
+  //  .m-slider-text-five {
+  //    position: absolute;
+  //    color: $color-light;
+  //  }
+  //}
+
+

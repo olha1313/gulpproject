@@ -1,7 +1,4 @@
-$color-btn-hover: #1e967f;
-$color-bg-input: #4e5c6c;
-
-.btn {
+.m-btn {
   background-color: $color-light-green;
   border: none;
   border-radius: 3px;
@@ -11,16 +8,16 @@ $color-bg-input: #4e5c6c;
   letter-spacing: 1px;
 }
 
-.btn-start {
+.m-btn-start {
   padding: 17px 30px;
 }
 
-.btn-touch {
+.m-btn-touch {
   font-size: 0.75rem;
   padding: 15px 25px;
 }
 
-.btn-subscribe {
+.m-btn-subscribe {
   font-size: 0.730rem;
   font-style: inherit;
   font-weight: 700;
@@ -30,17 +27,8 @@ $color-bg-input: #4e5c6c;
   right: 3px;
 }
 
-.nest {
-  background-color: $color-bg-input;
-  padding: 7px 0 7px 5px;
-  border-radius: 3px;
-  position: relative;
-
-  .new-letters {
-    border: none;
-    padding: 0;
-    outline: none;
-    background-color: transparent;
-    color: $color-text-footer;
-  }
+.m-btn-search {
+  position: absolute;
+  top: auto;
+  right: 5px;
 }

@@ -1,0 +1,50 @@
+.lst-works {
+  background-color: $color-light;
+  padding: 30px;
+
+  img {
+    display: block;
+  }
+
+  .image-text {
+    background-color: $color-white;
+    padding: 10px 0;
+    margin-bottom: 50px;
+  }
+}
+
+.new-member {
+  background-color: $color-bg-input;
+  padding: 7px 0 7px 5px;
+  border-radius: 3px;
+  position: relative;
+
+  .new-letters {
+    border: none;
+    padding: 0;
+    outline: none;
+    background-color: transparent;
+    color: $color-text-footer;
+  }
+}
+
+
+.benefit {
+  line-height: 1.8rem;
+  padding: 50px;
+
+  .m-advantages {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+
+    i {
+      margin: 15px 10px 0 0;
+    }
+  }
+
+  .icon-benefit {
+    font-size: 4rem;
+    color: $color-light-green;
+  }
+}

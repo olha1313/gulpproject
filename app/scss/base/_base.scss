@@ -1,13 +1,4 @@
-$bg-color: #fbfcfd;
-$color-text: #536a7f;
-$color-light: #f5f7fa;
-$color-footer: #2f4052;
-$color-sub-footer: #283645;
-$color-light-green: #1abb9c;
-$color-white: #ffffff;
-$color-text-footer: #a3b1bf;
-
-
+@import "../variable";
 
 body {
   font-family: 'Lato', sans-serif;
@@ -19,52 +10,20 @@ body {
 
 header {
   background-color: $color-white;
-  position: sticky;
-  top: 0px;
   z-index: 1;
   padding: 30px 10px;
   transition: all ease-in-out .4s;
+  width: 100%;
 }
 
 ul {
   margin: 0;
 }
 
-img {
-  width: 100%;
-}
-
-.social {
-  background-color: $color-light;
-}
-
-.dropdown-search>a {
-  border: 1px solid transparent;
-  border-bottom: none;
-  padding: 10px;
-}
-
-.lst-works {
-  background-color: $color-light;
-  padding: 30px;
-}
-
 #more-info, #footer-email{
   color: $color-text-footer;
 }
 
-.slider-text {
-  h1 {
-    font-size: 4rem;
-    text-transform: uppercase;
-    margin: 0;
-  }
-
-  p {
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-}
 
 footer {
   font-size: 0.875rem;

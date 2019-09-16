@@ -1,0 +1,50 @@
+.container-center{
+  margin: auto;
+}
+
+.fullwidth {
+    width: 100%;
+}
+
+#blue-logo, #white-logo {
+  height: 40px;
+  width: 162px;
+  transition: all ease-in-out .4s;
+}
+
+.offer {
+  padding: 60px;
+}
+
+#more-info:hover .icon-right-small {
+  padding-left: 6px;
+  transition: all .2s ease-in-out;
+  }
+
+.get-in-touch {
+  i {
+    margin-right: 5px;
+  }
+}
+
+.menu-sub-footer li {
+  margin: 0;
+}
+
+.menu-sub-footer li::before {
+      content: '·';
+      padding: 0 10px;
+}
+
+.menu-sub-footer li:first-child::before {
+  content: none;
+}
+
+.responsive-menu {
+  position: absolute;
+  right: 10px;
+
+  .btn-main-menu {
+    padding: 12px 10px;
+  }
+}
