@@ -9,105 +9,118 @@
   li {
     list-style: none;
     display: inline;
-    padding: 5px;
+
+    a {
+      padding: 5px;
+    }
   }
 }
 
+.l-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 
-.main-nav {
-  position: relative;
-  font-size: 0.875rem;
-  text-transform: uppercase;
-  font-weight: bold;
-  box-sizing: border-box;
-  display: inline-block;
-
-
-  :hover {
-    border-color: $color-border;
-    background-color: $color-light;
-    color: $color-light-green;
-  }
-
-  >a {
+  .main-nav {
     position: relative;
-    z-index: 2;
-    padding: 15px 15px;
-    border: 1px solid transparent;
-    border-bottom: none;
-    border-radius: 3px 3px 0 0;
-    color: $color-text;
-  }
+    font-size: 0.875rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    box-sizing: border-box;
+    display: inline-block;
 
-  .dropdown-menu {
-    display: none;
-    position: absolute;
-    top: 1.95rem;
-    text-align: left;
-    z-index: 1;
-    min-width: 11rem;
-    border: 1px solid $color-border;
-    border-radius: 0 3px 3px 3px;
 
     :hover {
-      background-color: $color-light-green;
-      color: $color-white;
+      border-color: $color-border;
+      background-color: $color-light;
+      color: $color-light-green;
     }
 
-    >a {
-      display: block;
-      padding: 10px 0 10px 20px;
-      border-bottom: 1px solid $color-border;
-      background-color: $color-light;
+    > a {
+      position: relative;
+      z-index: 2;
+      padding: 15px 15px;
+      border: 1px solid transparent;
+      border-bottom: none;
+      border-radius: 3px 3px 0 0;
       color: $color-text;
     }
-  }
-}
 
-
-.dropdown-search {
-  position: relative;
-
-  >a {
-    border: 1px solid transparent;
-    border-bottom: none;
-    padding: 10px;
-    position: relative;
-    z-index: 2;
-    color: $color-text;
-  }
-
-  :hover {
-    border-color: $color-border;
-    border-radius: 3px 3px 0 0;
-    border-bottom: none;
-    background-color: $color-light;
-  }
-
-  .main-menu-search {
-    position: absolute;
-    top: 1.7rem;
-    right: 0;
-    border: 1px solid $color-border;
-    border-radius: 3px 0 3px 3px;
-    padding: 10px;
-    background-color: $color-light;
-    display: none;
-    z-index: 1;
-
-    .search-input {
-      position: relative;
-      border: 1px solid $color-border;
-      background-color: $color-white;
-      min-width: 15rem;
+    .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 1.95rem;
       text-align: left;
-      padding: 5px;
+      z-index: 1;
+      min-width: 11rem;
+      border: 1px solid $color-border;
+      border-radius: 0 3px 3px 3px;
 
-      >input {
-        border: none;
-        outline: none;
-        background-color: transparent;
+      :hover {
+        background-color: $color-light-green;
+        color: $color-white;
+      }
+
+      > a {
+        display: block;
+        padding: 10px 0 10px 20px;
+        border-bottom: 1px solid $color-border;
+        background-color: $color-light;
+        color: $color-text;
       }
     }
   }
+
+
+  .dropdown-search {
+    position: relative;
+
+    > a {
+      border: 1px solid transparent;
+      border-bottom: none;
+      padding: 10px;
+      position: relative;
+      z-index: 2;
+      color: $color-text;
+    }
+
+    :hover {
+      border-color: $color-border;
+      border-radius: 3px 3px 0 0;
+      border-bottom: none;
+      background-color: $color-light;
+    }
+
+    .main-menu-search {
+      position: absolute;
+      top: 1.7rem;
+      right: 0;
+      border: 1px solid $color-border;
+      border-radius: 3px 0 3px 3px;
+      padding: 10px;
+      background-color: $color-light;
+      display: none;
+      z-index: 1;
+
+      .search-input {
+        position: relative;
+        border: 1px solid $color-border;
+        background-color: $color-white;
+        min-width: 15rem;
+        text-align: left;
+        padding: 5px;
+
+        > input {
+          border: none;
+          outline: none;
+          background-color: transparent;
+        }
+      }
+    }
+  }
+}
+
+.fixed {
+  position: fixed;
+  top: 0;
 }
